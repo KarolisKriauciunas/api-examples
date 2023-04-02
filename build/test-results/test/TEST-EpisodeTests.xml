@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EpisodeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-02T18:09:23" hostname="DESKTOP-UV21J89" time="0.618">
+  <properties/>
+  <testcase name="TestIfEpisodeContainsASpecificCharacter()" classname="EpisodeTests" time="0.618"/>
+  <system-out><![CDATA[Episode{id=1, name='Pilot', air_date='December 2, 2013', episode='S01E01', characterUrls=[https://rickandmortyapi.com/api/character/1, https://rickandmortyapi.com/api/character/2, https://rickandmortyapi.com/api/character/35, https://rickandmortyapi.com/api/character/38, https://rickandmortyapi.com/api/character/62, https://rickandmortyapi.com/api/character/92, https://rickandmortyapi.com/api/character/127, https://rickandmortyapi.com/api/character/144, https://rickandmortyapi.com/api/character/158, https://rickandmortyapi.com/api/character/175, https://rickandmortyapi.com/api/character/179, https://rickandmortyapi.com/api/character/181, https://rickandmortyapi.com/api/character/239, https://rickandmortyapi.com/api/character/249, https://rickandmortyapi.com/api/character/271, https://rickandmortyapi.com/api/character/338, https://rickandmortyapi.com/api/character/394, https://rickandmortyapi.com/api/character/395, https://rickandmortyapi.com/api/character/435]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
