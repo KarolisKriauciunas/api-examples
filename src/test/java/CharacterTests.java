@@ -22,7 +22,7 @@ public class CharacterTests {
     @Order(1)
     public void contentTest() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
-        String url = "https://rickandmortyapi.com/api/episode/1";
+        String url = "https://rickandmortyapi.com/api/character/1";
         HttpResponse<String> response = getResponse(url);
         Character result = mapper.readValue(response.body(), Character.class);
         Character expected = Character.builder()

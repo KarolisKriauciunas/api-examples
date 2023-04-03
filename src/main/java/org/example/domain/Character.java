@@ -19,8 +19,8 @@ public class Character {
     String type;
     String gender;
     Origin origin;
-    Location location;
-    List<String> episodes;
+//    Location location;
+//    List<String> episodes;
 
 
     @Override
