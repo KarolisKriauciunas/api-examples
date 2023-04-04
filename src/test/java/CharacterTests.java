@@ -7,10 +7,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static util.RequestUtil.debug;
 import static util.RequestUtil.getResponse;
@@ -19,7 +18,6 @@ public class CharacterTests {
 
 
     @Test
-    @Order(1)
     public void contentTest() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         String url = "https://rickandmortyapi.com/api/character/1";
@@ -38,7 +36,16 @@ public class CharacterTests {
     }
 
     @Test
-    @Order(2)
+    public void contentTestwithjson() throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        String url = "https://rickandmortyapi.com/api/character/1";
+        HttpResponse<String> response = getResponse(url);
+        String result = response.body().toString();
+        String expected = Files.readString(Path.of("src/test/resources/character.json"));
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
     public void shouldReturn404ResponseCode(){
         ObjectMapper mapper = new ObjectMapper();
         String url = "https://rickandmortyapi.com/api/character/9999";
